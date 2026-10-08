@@ -117,4 +117,4 @@ export const isParamTruthy = (param: string | undefined) => {
   }
   const value = param.trim().toLowerCase();
   return value === '1' || value === 'true' || value === 'yes' || value === 'on';
-}
+};

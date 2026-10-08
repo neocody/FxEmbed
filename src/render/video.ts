@@ -4,7 +4,6 @@ import { Experiment, experimentCheck } from '../experiments';
 import { handleQuote } from '../helpers/quote';
 import { DataProvider } from '../enum';
 import {
-  APIBlueskyStatus,
   APIMedia,
   APITwitterStatus,
   APIVideo,
