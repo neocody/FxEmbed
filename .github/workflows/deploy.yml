@@ -11,7 +11,7 @@ on:
 jobs:
   deploy:
     # Only run if the workflow_run event was successful (when triggered by tests workflow)
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.repository == 'FxEmbed/FxEmbed' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     environment: Production
     name: Deploy

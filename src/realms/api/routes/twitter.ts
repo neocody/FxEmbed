@@ -7,7 +7,7 @@ import { Context } from 'hono';
 import { isParamTruthy } from '../../../helpers/utils';
 
 const shouldIncludeAboutAccount = (c: Context) => {
-  return isParamTruthy(c.req.query('about_account') ?? c.req.query('aboutAccount'))
+  return isParamTruthy(c.req.query('about_account') ?? c.req.query('aboutAccount'));
 };
 
 export const statusAPIRequest = async (c: Context) => {

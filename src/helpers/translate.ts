@@ -16,7 +16,7 @@ const getDomain = (): string | null => {
 export const translateStatus = async (
   status: APITwitterStatus | APIBlueskyStatus,
   _language: string,
-  c: Context
+  _c: Context
 ): Promise<PolyglotTranslation | null> => {
   const language = normalizeLanguage(_language);
 
